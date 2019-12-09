@@ -71,16 +71,13 @@
               </button>
               <div class="row"></div>
             </div>
-            <div class="div1">
-              Test connection...
-            </div>
 
             <p>&nbsp;</p>
             <h3>Fan:</h3>
             <p>&nbsp;</p>
 
             <div class="row">
-              <button class="btn btn-lg btn-warning pushme-fan with-color" id="trigger">
+              <button class="btn btn-lg btn-warning pushme-fan with-color" id="trigger2">
                 FAN OFF
               </button>
               <div class="row"></div>

@@ -22,14 +22,24 @@ $(document).ready(function() {
       return v === "FAN ON" ? "FAN OFF" : "FAN ON";
     });
   });
-});
 
-$(document).ready(function() {
-  $("trigger").click(function() {
+  $("#trigger").click(function() {
     $.ajax({
-      url: "mqtt_conn.php",
+      url: "mqtt_conn.php?send=2",
       success: function(result) {
-        alert(result);
+        //alert(result);
+      },
+      error: function(xhr) {
+        alert("An error occured: " + xhr.status + " " + xhr.statusText);
+      }
+    });
+  });
+
+  $("#trigger2").click(function() {
+    $.ajax({
+      url: "mqtt_conn.php?send=1",
+      success: function(result) {
+        //alert(result);
       },
       error: function(xhr) {
         alert("An error occured: " + xhr.status + " " + xhr.statusText);
@@ -38,13 +48,13 @@ $(document).ready(function() {
   });
 });
 
-// First part can be used for GET/POST requests 
+// First part can be used for GET/POST requests
 //
 //$.ajax({
 //   type: "POST",
 //   url: "/ajax/request.html",
 //   data: {action: 'test'},
-//   dataType:'JSON', 
+//   dataType:'JSON',
 //   success: function(response){
 //       console.log(response.blablabla);
 //       // put on console what server sent back...
