@@ -50,7 +50,8 @@ html {
 }
 @media screen and (max-width: 767px) {
   .welcome-section {
-    height: 100%;
+    margin-block-end: 50px;
+    height: fit-content;
     padding-top: 50px;
     text-align: center;
     background: #fff;
