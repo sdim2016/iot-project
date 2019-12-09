@@ -69,8 +69,6 @@ require_once 'authenticate.php';
             <br/>
             <div class="container-fluid">
               <div class="row">
-                <div class="col-md-3">
-                </div>
     <div class="col-md-3">
   <div class="card shadow mb-5">
     <div class="card-header py-3">
@@ -104,7 +102,27 @@ require_once 'authenticate.php';
         </div>
       </div>
       <div class="col-md-3">
-    </div>
+    <div class="card shadow mb-5">
+      <div class="card-header py-3">
+        <p class="text-primary m-0 font-weight-bold">Motion sensor</p>
+      </div>
+      <div class="card-body">
+              <h4 class="imp">State:</h3>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+        <div class="card shadow mb-5">
+          <div class="card-header py-3">
+            <p class="text-primary m-0 font-weight-bold">Temperature and humidity</p>
+          </div>
+          <div class="card-body">
+                  <h4 class="imp">State:</h3>
+
+                  </div>
+                </div>
+              </div>
   </div>
             <p>&nbsp;</p>
             <div class="row">
