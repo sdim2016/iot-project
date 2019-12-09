@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 */
-
+include 'authenticate.php';
 require './vendor/bluerhinos/phpmqtt/phpMQTT.php';
 $server = "142.93.228.27";
 $port = 1883;

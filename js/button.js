@@ -3,11 +3,9 @@ $(document).ready(function() {
     if ($(this).hasClass("btn-success")) {
       $(this).addClass("btn-danger");
       $(this).removeClass("btn-success");
-      $(this).removeClass("btn-warning");
     } else {
       $(this).addClass("btn-success");
       $(this).removeClass("btn-danger");
-      $(this).removeClass("btn-warning");
     }
   });
 

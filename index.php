@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+require_once 'authenticate.php';
+ ?>
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8" />
@@ -6,10 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="canonical" href="https://html5-templates.com/" />
     <title>IoT project</title>
-    <meta
-      name="description"
-      content="Simplified Bootstrap template with sticky menu"
-    />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/sticky-menu.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -30,7 +28,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand page-scroll" href="#page-top">Welcome</a>
+          <a class="navbar-brand page-scroll" href="#page-top">IoT Smart Home Project</a>
         </div>
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -40,6 +38,9 @@
             </li>
             <li>
               <a class="page-scroll" href="#about">About</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="logout.php">Logout</a>
             </li>
             <!--                     <li>
                         <a class="page-scroll" href="#whatwedo">What We Do</a>
@@ -66,7 +67,7 @@
             <h3>Light:</h3>
             <p>&nbsp;</p>
             <div class="row">
-              <button class="btn btn-lg btn-warning pushme-light with-color" id="trigger">
+              <button class="btn btn-lg btn-danger pushme-light with-color" id="trigger">
                 LIGHT OFF
               </button>
               <div class="row"></div>
@@ -77,19 +78,17 @@
             <p>&nbsp;</p>
 
             <div class="row">
-              <button class="btn btn-lg btn-warning pushme-fan with-color" id="trigger2">
+              <button class="btn btn-lg btn-danger pushme-fan with-color" id="trigger2">
                 FAN OFF
               </button>
               <div class="row"></div>
             </div>
             <p>&nbsp;</p>
             <div class="row">
-              <span>
-                <a class="btn btn-primary page-scroll" href="#about"
-                  >Click to see below</a
-                >
-                <div class="row"></div
-              ></span>
+              <span> <br/>
+                <a class="btn btn-primary page-scroll" href="#about">Click to see below</a>
+                <div class="row"></div>
+              </span>
             </div>
           </div>
         </div>
