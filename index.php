@@ -10,6 +10,7 @@ require_once 'authenticate.php';
     <title>IoT project</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/sticky-menu.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/custom.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   </head>
@@ -64,25 +65,47 @@ require_once 'authenticate.php';
               This dashboard is a control panel for some real devices: fan,
               light, etc. You can open it on your phone too.
             </h4>
-            <h3>Light:</h3>
-            <p>&nbsp;</p>
+            <br/>
+            <br/>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-3">
+                </div>
+    <div class="col-md-3">
+  <div class="card shadow mb-5">
+    <div class="card-header py-3">
+      <p class="text-primary m-0 font-weight-bold">Lamp controller</p>
+    </div>
+    <div class="card-body">
+            <h3 class="imp">Light:</h3>
             <div class="row">
               <button class="btn btn-lg btn-danger pushme-light with-color" id="trigger">
                 LIGHT OFF
               </button>
               <div class="row"></div>
             </div>
-
-            <p>&nbsp;</p>
-            <h3>Fan:</h3>
-            <p>&nbsp;</p>
-
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+    <div class="card shadow mb-5">
+      <div class="card-header py-3">
+        <p class="text-primary m-0 font-weight-bold">Fan controller</p>
+      </div>
+      <div class="card-body">
+            <h3 class="imp">Fan:</h3>
             <div class="row">
               <button class="btn btn-lg btn-danger pushme-fan with-color" id="trigger2">
                 FAN OFF
               </button>
               <div class="row"></div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+    </div>
+  </div>
             <p>&nbsp;</p>
             <div class="row">
               <span> <br/>
