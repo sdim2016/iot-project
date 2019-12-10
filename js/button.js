@@ -86,6 +86,12 @@ $(document).ready(function() {
         $("#th_ts").html("<b>Last update:</b> " + arr[2]);
       }
     });
+    $.ajax({
+      url: "pir_handler.php",
+      success: function(result) {
+        $("#motion").html("<b>Last motion detected:</b> " + result);
+      }
+    });
   }
   thHandle();
   setInterval(thHandle, 5000);
