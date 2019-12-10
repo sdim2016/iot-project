@@ -48,7 +48,7 @@ html {
   text-align: center;
   background: #fff;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .welcome-section {
     margin-block-end: 50px;
     height: fit-content;
