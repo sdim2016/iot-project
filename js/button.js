@@ -44,6 +44,27 @@ $(document).ready(function() {
       }
     });
   });
+
+  setInterval(function(){
+    $.ajax({
+      url: "th_handler.php",
+      success: function(result) {
+        $("#motion").html(result);
+      }
+    });
+  }, 5000)
+
+/*  function longPoll() {
+    $.ajax({
+      url: "mqtt_subscribe.php",
+      success: function(result) {
+        longPoll();
+        $("#motion").val(result);
+      }
+    });
+  }
+      setTimeout(longPoll(), 2000);
+      */
 });
 
 // First part can be used for GET/POST requests
