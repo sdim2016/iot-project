@@ -56,7 +56,7 @@ $(document).ready(function() {
     });
   }
   thHandle();
-  setInterval(thHandle(), 5000);
+  setInterval(thHandle, 5000);
 
 /*  function longPoll() {
     $.ajax({
