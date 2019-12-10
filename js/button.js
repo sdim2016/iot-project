@@ -3,9 +3,63 @@ $(document).ready(function() {
     if ($(this).hasClass("btn-success")) {
       $(this).addClass("btn-danger");
       $(this).removeClass("btn-success");
+      if ($(this).is("#trigger2")) {
+        $.ajax({
+          url: "mqtt_conn.php?send=5",
+          success: function(result) {
+
+          },
+          error: function(xhr) {
+            alert("An error occured: " + xhr.status + " " + xhr.statusText);
+          }
+        });
+        $(this).addClass("btn-danger");
+        $(this).removeClass("btn-success");
+      }
+      if ($(this).is("#trigger")) {
+        $.ajax({
+          url: "mqtt_conn.php?send=6",
+          success: function(result) {
+
+          },
+          error: function(xhr) {
+            alert("An error occured: " + xhr.status + " " + xhr.statusText);
+          }
+        });
+        $(this).addClass("btn-danger");
+        $(this).removeClass("btn-success");
+      }
+
+
     } else {
       $(this).addClass("btn-success");
       $(this).removeClass("btn-danger");
+      if ($(this).is("#trigger2")) {
+        $.ajax({
+          url: "mqtt_conn.php?send=3",
+          success: function(result) {
+
+          },
+          error: function(xhr) {
+            alert("An error occured: " + xhr.status + " " + xhr.statusText);
+          }
+        });
+        $(this).addClass("btn-success");
+        $(this).removeClass("btn-danger");
+      }
+      if ($(this).is("#trigger")) {
+        $.ajax({
+          url: "mqtt_conn.php?send=4",
+          success: function(result) {
+
+          },
+          error: function(xhr) {
+            alert("An error occured: " + xhr.status + " " + xhr.statusText);
+          }
+        });
+        $(this).addClass("btn-success");
+        $(this).removeClass("btn-danger");
+      }
     }
   });
 
@@ -21,29 +75,7 @@ $(document).ready(function() {
     });
   });
 
-  $("#trigger").click(function() {
-    $.ajax({
-      url: "mqtt_conn.php?send=2",
-      success: function(result) {
-        //alert(result);
-      },
-      error: function(xhr) {
-        alert("An error occured: " + xhr.status + " " + xhr.statusText);
-      }
-    });
-  });
 
-  $("#trigger2").click(function() {
-    $.ajax({
-      url: "mqtt_conn.php?send=1",
-      success: function(result) {
-        //alert(result);
-      },
-      error: function(xhr) {
-        alert("An error occured: " + xhr.status + " " + xhr.statusText);
-      }
-    });
-  });
   function thHandle(){
     $.ajax({
       url: "th_handler.php",
