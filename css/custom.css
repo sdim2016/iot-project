@@ -41,3 +41,22 @@ background-color: #f5e642;
   margin-top: 10px;
   margin-bottom: 25px;
 }
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  margin-left: -9px;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.special-card {
+  background-color: rgba(245, 245, 245, 0.75);
+}
