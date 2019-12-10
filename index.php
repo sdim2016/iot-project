@@ -155,7 +155,7 @@ require_once 'authenticate.php';
             <h3>Made by:</h3>
             <h2>Dmitrii Slepnev</h2>
             <h2>Edward Brovkin</h2>
-            <h2>Alexander Shchilkin</h2>
+            <h2>Aleksandr Shchilkin</h2>
           </div>
         </div>
       </div>
