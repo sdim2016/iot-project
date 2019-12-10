@@ -44,15 +44,19 @@ $(document).ready(function() {
       }
     });
   });
-
-  setInterval(function(){
+  function thHandle(){
     $.ajax({
       url: "th_handler.php",
       success: function(result) {
-        $("#motion").html(result);
+        var arr = result.split(/,/);
+        $("#temperature").html("<b>Temperature:</b> " + arr[0] + " °C");
+        $("#humidity").html("<b>Humidity:</b> " + arr[1] + "%");
+        $("#th_ts").html("<b>Last update:</b> " + arr[2]);
       }
     });
-  }, 5000)
+  }
+  thHandle();
+  setInterval(thHandle(), 5000);
 
 /*  function longPoll() {
     $.ajax({

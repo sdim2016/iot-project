@@ -108,7 +108,7 @@ require_once 'authenticate.php';
       </div>
       <div class="card-body">
               <h4 class="imp">State:</h3>
-              <h3 id="motion">Loading...</h3>
+                <h5 id="motion">Loading...</h3>
               </div>
             </div>
           </div>
@@ -119,7 +119,9 @@ require_once 'authenticate.php';
           </div>
           <div class="card-body">
                   <h4 class="imp">State:</h3>
-
+                    <p id="temperature">Loading...</p>
+                    <p id="humidity">Loading...</p>
+                    <p id="th_ts">Loading...</p>
                   </div>
                 </div>
               </div>
