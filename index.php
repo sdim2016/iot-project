@@ -56,7 +56,7 @@ require_once 'authenticate.php';
       <!-- .container -->
     </nav>
     <!-- Welcome   -->
-    <section id="welcome" class="welcome-section">
+    <section id="welcome" class="welcome-section" style="position: relative; overflow: hidden;">
       <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
   <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
 </video>
@@ -65,7 +65,7 @@ require_once 'authenticate.php';
           <div class="col-lg-12">
 
             <div class="card-transparent">
-  <div class="card-header special-card"><h1 class="text-black">IoT Project Dashboard</h1></div>
+  <div class="card-header special-card"><h1>IoT Project Dashboard</h1></div>
   <div class="card-body special-card">            <h4>
                 This dashboard is a control panel for some real devices: fan,
                 light, etc. You can open it on your phone too.
