@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
    <link rel="stylesheet" href="css/custom.css">
 </head>
 
-<body style="background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg'); background-size: cover;
+<body style="background-image: url('images/login-bckg.jpg'); background-size: cover;
 background-repeat: no-repeat;">
    <div class="container">
        <div class="row justify-content-center">
