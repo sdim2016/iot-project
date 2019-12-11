@@ -89,7 +89,7 @@ $(document).ready(function() {
     $.ajax({
       url: "pir_handler.php",
       success: function(result) {
-        $("#motion").html("<b>Last motion detected:</b> " + result);
+        $("#motion").html("<b>Last motion detected:</b> <br/> " + result);
       }
     });
   }
